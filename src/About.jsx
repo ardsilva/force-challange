@@ -8,7 +8,7 @@ const About = () => {
             <h2>Welcome to <strong>iClinic</strong></h2>
             <h6>FRONTEND CHALLENGE</h6>
             <main>
-            <button onClick={() => history.push('/force')}>START</button>
+            <button onClick={() => history.push('/side-pick')}>START</button>
             </main>
         </div>
     )

@@ -23,7 +23,7 @@ const Home = () => {
 
     return (
       <React.Fragment>
-        <div><button onClick={() => history.push('/')}>back</button></div>
+        <div><button onClick={() => history.push('/force-challange')}>back</button></div>
         <div>
             <button onClick={() => getForceSide()}>choose your path again, Padawan</button>
         </div>

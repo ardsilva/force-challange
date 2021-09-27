@@ -6,23 +6,11 @@ import Home from './Home';
 const App = () => {
     return (
       <div className="App">
-        <div>
-          <nav>
-            <ul id="navigation">
-              <li>
-                <Link to="/">Inicio</Link>
-              </li>
-              <li>
-              <Link to="/force">Escolha de lado</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/force-challange">
             <About />
           </Route>
-          <Route path="/force">
+          <Route path="/side-pick">
             <Home />
           </Route>
         </Switch>
