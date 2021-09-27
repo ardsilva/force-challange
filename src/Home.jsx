@@ -1,36 +1,32 @@
-import './App.css';
-import React from 'react';
-import logo from './logo.svg';
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useHistory } from "react-router-dom";
 
-class Home extends React.Component {
-    state = {
-    forceSide: {},
-    isLoading: true,
-    errors: null
-  };
+const Home = () => {
+    const history = useHistory();
+    const [forceSide, setForceSide] = useState({});
+    const [isLoading, setIsLoading] = useState(true);
 
-  getForceSide() {
+  const getForceSide = () => {
     Promise.race([axios
       .get("https://swapi.dev/api/people/1"), axios
       .get("https://swapi.dev/api/people/4")])
     .then(res => {console.log(res.data);
-      this.setState({forceSide: res.data});
+      setForceSide(res.data);
     }).catch(err => console.log(err))
-    .finally(() => this.setState({isLoading: false}));
+    .finally(() => setIsLoading(false));
   }
 
-  componentDidMount() {
-    this.getForceSide();
-  }
+  useEffect(() => {
+    getForceSide();
+  }, []);
 
-  render() {
-    const { isLoading, forceSide } = this.state;
     return (
       <React.Fragment>
-        <div><button>back</button></div>
-        <div><button onClick={() => this.getForceSide()}>choose your path again, Padawan</button></div>
-        
+        <div><button onClick={() => history.push('/')}>back</button></div>
+        <div>
+            <button onClick={() => getForceSide()}>choose your path again, Padawan</button>
+        </div>
         <div>
           {!isLoading ? (
             <p>Your master is <strong>{forceSide.name}</strong></p>
@@ -41,7 +37,5 @@ class Home extends React.Component {
       </React.Fragment>
     );
   }
-
-}
 
 export default Home;

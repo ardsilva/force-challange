@@ -1,19 +1,17 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 
-class About extends React.Component {
-    
-    render() {
-        return (
-            <div>
-                <h2>About Page</h2>
-                <main>
-                    <p>This section contains information about...</p>
-                </main>
-            </div>
-        )
-    }
+const About = () => {
+    const history = useHistory();
+    return(
+        <div>
+            <h2>Welcome to <strong>iClinic</strong></h2>
+            <h6>FRONTEND CHALLENGE</h6>
+            <main>
+            <button onClick={() => history.push('/force')}>START</button>
+            </main>
+        </div>
+    )
 }
-
-
 
 export default About;
