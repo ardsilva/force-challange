@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/force-challange/static/css/main.b0abde3e.chunk.css",
-    "main.js": "/force-challange/static/js/main.5291167b.chunk.js",
-    "main.js.map": "/force-challange/static/js/main.5291167b.chunk.js.map",
-    "runtime-main.js": "/force-challange/static/js/runtime-main.7d0a5a9e.js",
-    "runtime-main.js.map": "/force-challange/static/js/runtime-main.7d0a5a9e.js.map",
-    "static/js/2.aa713e4e.chunk.js": "/force-challange/static/js/2.aa713e4e.chunk.js",
-    "static/js/2.aa713e4e.chunk.js.map": "/force-challange/static/js/2.aa713e4e.chunk.js.map",
-    "static/js/3.8c55eedd.chunk.js": "/force-challange/static/js/3.8c55eedd.chunk.js",
-    "static/js/3.8c55eedd.chunk.js.map": "/force-challange/static/js/3.8c55eedd.chunk.js.map",
+    "main.css": "/force-challange/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/force-challange/static/js/main.d4baa517.chunk.js",
+    "main.js.map": "/force-challange/static/js/main.d4baa517.chunk.js.map",
+    "runtime-main.js": "/force-challange/static/js/runtime-main.4dbc3397.js",
+    "runtime-main.js.map": "/force-challange/static/js/runtime-main.4dbc3397.js.map",
+    "static/js/2.9465ea6d.chunk.js": "/force-challange/static/js/2.9465ea6d.chunk.js",
+    "static/js/2.9465ea6d.chunk.js.map": "/force-challange/static/js/2.9465ea6d.chunk.js.map",
+    "static/js/3.cbd5ac42.chunk.js": "/force-challange/static/js/3.cbd5ac42.chunk.js",
+    "static/js/3.cbd5ac42.chunk.js.map": "/force-challange/static/js/3.cbd5ac42.chunk.js.map",
     "index.html": "/force-challange/index.html",
-    "static/css/main.b0abde3e.chunk.css.map": "/force-challange/static/css/main.b0abde3e.chunk.css.map",
-    "static/js/2.aa713e4e.chunk.js.LICENSE.txt": "/force-challange/static/js/2.aa713e4e.chunk.js.LICENSE.txt",
+    "static/css/main.6dea0f05.chunk.css.map": "/force-challange/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.9465ea6d.chunk.js.LICENSE.txt": "/force-challange/static/js/2.9465ea6d.chunk.js.LICENSE.txt",
     "static/media/darth-vader.5b59175e.png": "/force-challange/static/media/darth-vader.5b59175e.png",
     "static/media/luke-skywalker.7ac8850b.png": "/force-challange/static/media/luke-skywalker.7ac8850b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7d0a5a9e.js",
-    "static/js/2.aa713e4e.chunk.js",
-    "static/css/main.b0abde3e.chunk.css",
-    "static/js/main.5291167b.chunk.js"
+    "static/js/runtime-main.4dbc3397.js",
+    "static/js/2.9465ea6d.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.d4baa517.chunk.js"
   ]
 }
