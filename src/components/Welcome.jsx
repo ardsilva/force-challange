@@ -11,6 +11,7 @@ const StartButton = styled.button`
     background: #2C97D1;
     color: #FFFFFF;
     letter-spacing: 0.35em;
+    cursor: pointer;
 `;
 
 const Title = styled.h2`
@@ -33,7 +34,7 @@ const Welcome = () => {
         <div>
             <Title>Welcome to <strong>iClinic</strong></Title>
             <SubTitle>FRONTEND CHALLENGE</SubTitle>
-            <StartButton onClick={() => history.push('/side-pick')}>START</StartButton>
+            <StartButton onClick={() => history.push('/force-side')}>START</StartButton>
         </div>
     )
 }

@@ -102,7 +102,7 @@ const Strong = styled.strong`
   }
 `;
 
-const Home = () => {
+const ForceSide = () => {
     const history = useHistory();
     const [forceSide, setForceSide] = useState({});
     const [isLoading, setIsLoading] = useState(true);
@@ -113,7 +113,7 @@ const Home = () => {
     Promise.race([
       axios.get("https://swapi.dev/api/people/1"),
       axios.get("https://swapi.dev/api/people/4")
-    ]).then(res => {console.log(res.data);
+    ]).then(res => {
       setForceSide(res.data);
       setTheme(res.data.name.split(' ')[0]);
     }).catch(err => console.log(err))
@@ -122,14 +122,18 @@ const Home = () => {
 
   useEffect(() => {
     getForceSide();
+    
+    return () => {
+    setIsLoading(false)
+  }
   }, []);
 
     return (
     <ThemeProvider theme={{ mode: theme }}>
         <Box>
             <div>
-                <BackButton onClick={() => history.push('/force-challange')}>
-                  <Icon viewBox="0 0 32 32">
+                <BackButton onClick={() => history.push('/force-challenge')}>
+                  <Icon viewBox="0 0 32 32" data-testid="svg-left-arrow">
                     <path d="M26.025 14.496l-14.286-.001 6.366-6.366L15.979 6 5.975 16.003 15.971 26l2.129-2.129-6.367-6.366h14.29z"/>
                   </Icon>
                   <Label>back</Label>
@@ -163,4 +167,4 @@ const Home = () => {
     );
   }
 
-export default Home;
+export default ForceSide;

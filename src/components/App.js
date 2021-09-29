@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import Welcome from './Welcome';
-import Home from './Home';
+import ForceSide from './ForceSide';
 import styled  from 'styled-components';
 
 const AppDiv = styled.div`
@@ -15,11 +15,11 @@ const App = () => {
     return (
       <AppDiv>
         <Switch>
-          <Route exact path="/force-challange">
+          <Route exact path="/force-challenge">
             <Welcome />
           </Route>
-          <Route path="/side-pick">
-            <Home />
+          <Route exact path="/force-side">
+            <ForceSide />
           </Route>
         </Switch>
       </AppDiv>
