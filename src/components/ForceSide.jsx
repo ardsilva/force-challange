@@ -3,9 +3,9 @@ import axios from 'axios';
 import { useHistory } from "react-router-dom";
 import vader from '../assets/darth-vader.png';
 import luke from '../assets/luke-skywalker.png';
+import saber from '../assets/saber.gif';
 import styled, {ThemeProvider} from 'styled-components';
 import theme from 'styled-theming';
-import Loading from './Loading';
 
 const boxBackgroundColor = theme('mode', {
   Darth: '#2A2A2A',
@@ -140,31 +140,32 @@ const ForceSide = () => {
                   <Label>back</Label>
                 </BackButton>
             </div>
+            <div>
+            <StyledButton
+                disabled={isLoading} 
+                onClick={() => getForceSide()}>choose your path again, Padawan
+            </StyledButton>
             {!isLoading ? (
                 <div>
-                  <div>
-                    <StyledButton
-                        disabled={isLoading} 
-                        onClick={() => getForceSide()}>choose your path again, Padawan
-                    </StyledButton>
-                  </div>
                     <Image 
                         src={forceSide.name === 'Darth Vader' ? vader : luke} 
                         alt="Master" 
                     />
                     <P>Your master is <Strong>{forceSide.name}</Strong></P>
-                    <div>
-                      <MobileStyledButton
-                          disabled={isLoading} 
-                          onClick={() => getForceSide()}>choose your path again, Padawan
-                      </MobileStyledButton>
-                    </div>
                 </div>
             ) : (
               <div>
-                <Loading window={window.innerWidth} />
+                <Image 
+                  src={saber} 
+                  alt="Loading..." 
+                />
               </div>
             )}
+            <MobileStyledButton
+                disabled={isLoading} 
+                onClick={() => getForceSide()}>choose your path again, Padawan
+            </MobileStyledButton>
+            </div>
         </Box>
       </ThemeProvider>
     );
