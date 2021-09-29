@@ -90,6 +90,13 @@ const Image = styled.img`
   }
 `;
 
+const Gif = styled.img`
+    width: 35%;
+    @media(max-width: 768px) {
+      width: 50%;
+  }
+`;
+
 const P = styled.p`
     font-style: normal;
     font-weight: normal;
@@ -155,7 +162,7 @@ const ForceSide = () => {
                 </div>
             ) : (
               <div>
-                <Image 
+                <Gif 
                   src={saber} 
                   alt="Loading..." 
                 />
