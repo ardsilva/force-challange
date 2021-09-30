@@ -4,7 +4,7 @@
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/badge/languages-3-green">
   <img alt="Repository size" src="https://img.shields.io/badge/repo--size-1.10MB-blue">
-   <img alt="License" src=" https://img.shields.io/badge/license-MIT-yellow">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-yellow">
 </p>
 </h1>
 
