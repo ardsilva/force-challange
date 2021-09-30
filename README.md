@@ -49,6 +49,9 @@ $ yarn install
 $ yarn start
 
 # A aplicação será aberta na porta:3000 - http://localhost:3000/force-challenge
+
+# Para cobertura dos testes, digite
+$ yarn coverage
 ```
 
 ---
