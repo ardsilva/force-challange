@@ -133,7 +133,7 @@ const ForceSide = () => {
     
     return () => {
     setIsLoading(false)
-  }
+    }
   }, []);
 
     return (
